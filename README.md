@@ -2,7 +2,7 @@
 
 ## Overview
 
-Welcome to the Gaurav-CoreJava repository. This repository is dedicated to practicing and enhancing your Java programming skills. It contains various Java code examples, exercises, and projects that cover fundamental to advanced Java concepts.
+Welcome to the Gaurav-CoreJava repository. This repository is dedicated to practicing and enhancing Java programming skills. It contains various Java code examples, exercises, and projects that cover fundamental to advanced Java concepts.
 
 ## Table of Contents
 
@@ -14,12 +14,10 @@ Welcome to the Gaurav-CoreJava repository. This repository is dedicated to pract
 
 ## Introduction
 
-This repository is designed to help you practice and master Java programming. It includes:
+This repository is designed for practicicing and mastering Java programming. It includes:
 
 - Basic Java programs
 - Object-Oriented Programming (OOP) examples
-- Data structures and algorithms
-- Java 8 and beyond features
 - Projects and real-world applications
 
 ## Setup
