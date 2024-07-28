@@ -1,3 +1,5 @@
+import JavaCustom.tools.AdvanceCalc;
+
 public class Inheritance {
     public static void main(String[] args) {
         Calc obj = new Calc();
@@ -11,6 +13,11 @@ public class Inheritance {
         int r4 = obj2.substract(1222, 122);
         int r5 = obj2.multiply(12, 12);
         int r6 = obj2.divide(1222, 122);
+
+        VeryAdvanceCalculator obj3 = new VeryAdvanceCalculator();
+        double d1= obj3.power(12, 12);
+        System.out.println("power" + d1);
+
         System.out.println(r5);
         System.out.println(r6);
     }
