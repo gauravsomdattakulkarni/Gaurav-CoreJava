@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<body>
+<div th:fragment="content">
+    <div class="container-fluid">
+        <div class="my-3 card">
+            <div class="card-body">
+                <form name="user_task_edit_form" id="user_task_edit_form" method="POST" action="/edit_task_success">
+                    <div class="mb-4">
+                        <h5 class="form-label">Edit Task</h5>
+                    </div>
+
+                    <!-- Title -->
+                    <div class="mb-4">
+                        <label for="title" class="form-label">Task Title</label>
+                        <input type="hidden" name="id" th:value="${task.id}">
+                        <input type="text" id="title" name="title" class="form-control"
+                               placeholder="Enter Task Title" th:value="${task.title}" />
+                        <small class="text-muted">Provide a name for your task.</small>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="mb-4">
+                        <label for="description" class="form-label">Description</label>
+                        <textarea class="form-control" id="description" name="description" rows="3"
+                                  placeholder="Enter description here...">[[${task.description}]]</textarea>
+                        <small class="text-muted">Description (max 200 characters)</small>
+                    </div>
+
+
+                    <!-- Buttons -->
+                    <div class="row">
+                        <div class="row my-3">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <div th:if="${error}" class="alert alert-danger" role="alert">
+                                        <p th:text="${error}"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row my-3">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <div th:if="${success}" class="alert alert-success" role="alert">
+                                        <p th:text="${success}"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <button type="submit" class="btn btn-primary">
+                                Update Task
+                            </button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

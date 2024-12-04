@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div th:fragment="content">
+    <br><br><br><br>
+    <div class="container-fluid">
+    <div class="row">
+        <!-- [Pending Tasks] start -->
+        <div class="col-md-3 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Pending Tasks</h5>
+                    <p class="card-text fs-3 text-primary" th:text="${pendingCount}">0</p>
+
+                </div>
+            </div>
+        </div>
+        <!-- [Pending Tasks] end -->
+
+        <!-- [Completed Tasks] start -->
+        <div class="col-md-3 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Completed Tasks</h5>
+                    <p class="card-text fs-3 text-success" th:text="${completedCount}">0</p>
+
+                </div>
+            </div>
+        </div>
+        <!-- [Completed Tasks] end -->
+
+        <!-- [In Process Tasks] start -->
+        <div class="col-md-3 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">In Process Tasks</h5>
+                    <p class="card-text fs-3 text-warning" th:text="${inProcessCount}">0</p>
+
+                </div>
+            </div>
+        </div>
+        <!-- [In Process Tasks] end -->
+
+        <!-- [Not Started Tasks] start -->
+        <div class="col-md-3 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Not Started Tasks</h5>
+                    <p class="card-text fs-3 text-muted" th:text="${notStartedCount}">0</p>
+
+                </div>
+            </div>
+        </div>
+        <!-- [Not Started Tasks] end -->
+
+        <!-- [On Hold Tasks] start -->
+        <div class="col-md-3 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">On Hold Tasks</h5>
+                    <p class="card-text fs-3 text-info" th:text="${onHoldCount}">0</p>
+
+                </div>
+            </div>
+        </div>
+        <!-- [On Hold Tasks] end -->
+
+        <!-- [Testing Tasks] start -->
+        <div class="col-md-3 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Testing Tasks</h5>
+                    <p class="card-text fs-3 text-primary" th:text="${testingCount}">0</p>
+
+                </div>
+            </div>
+        </div>
+        <!-- [Testing Tasks] end -->
+
+        <!-- [Under Verification Tasks] start -->
+        <div class="col-md-3 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Under Verification</h5>
+                    <p class="card-text fs-3 text-danger" th:text="${underVerificationCount}">0</p>
+
+                </div>
+            </div>
+        </div>
+        <!-- [Under Verification Tasks] end -->
+
+        <!-- [Sent for Review Tasks] start -->
+        <div class="col-md-3 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Sent for Review</h5>
+                    <p class="card-text fs-3 text-warning" th:text="${sentForReviewCount}">0</p>
+
+                </div>
+            </div>
+        </div>
+        <!-- [Sent for Review Tasks] end -->
+    </div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
